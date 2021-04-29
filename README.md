@@ -4,7 +4,7 @@
 1. Set up the build environment following instructions from [here](https://shrp.github.io/#/guide) (Fully compatible/tested)
 2. Clone the device tree in the root of SHRP source:
 ```
-git clone -b android-11.0 https://github.com/soulr344/device_samsung_m21nsxx.git device/samsung/m21nsxx
+git clone -b android-11.0 https://github.com/SHRP-Devices/device_samsung_m21nsxx.git device/samsung/m21nsxx
 ```
 3. To build:
 ```
