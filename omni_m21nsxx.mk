@@ -1,17 +1,14 @@
-# Inherit from the common Open Source product configuration
+# Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common Omni stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from those products. Most specific first.
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)  # If you are building for a tablet
+# Inherit from m21 device
+$(call inherit-product, device/samsung/m21/device.mk)
 
-## Device identifier. This must come after all inclusions
-PRODUCT_RELEASE_NAME := m21nsxx
-
-PRODUCT_NAME := omni_m21nsxx
-PRODUCT_DEVICE := m21nsxx
-PRODUCT_BRAND := Samsung
-PRODUCT_MANUFACTURER := Samsung
+PRODUCT_DEVICE := m21
+PRODUCT_NAME := omni_m21
+PRODUCT_BRAND := samsung
 PRODUCT_MODEL := Galaxy M21
+PRODUCT_MANUFACTURER := samsung
