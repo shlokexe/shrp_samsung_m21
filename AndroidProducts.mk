@@ -14,4 +14,11 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_m21nsxx.mk
+
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/omni_m21.mk
+
+COMMON_LUNCH_CHOICES := \
+    omni_m21-user \
+    omni_m21-userdebug \
+    omni_m21-eng
